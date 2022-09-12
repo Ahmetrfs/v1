@@ -17,11 +17,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", "17301164"))
-API_HASH = getenv("API_HASH", "a869326a848194fd5083c96f3dcad9db")
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH", "")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "5486208749:AAF4PnqcDkzKXHIPqPS9g0MSADTn3wDIbXE")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://dragon:t.me.cccecc@dragon.7v7baed.mongodb.net/?retryWrites=true&w=majority")
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001782135626"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "soso bot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "991840207").split())
+    map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -141,7 +141,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "AgCpRwodao-FTKmJFggyETxxjd9IE_eMqjXQprWo_1S5rpiSpE9TouQpsrPO3LotLKx-3eFv1PlvWC9umQnibEjmV6kZAJA-pDIu4AqKyJBeDes6zEeT3mX_VWYzjH26YP35RU6DXsFfpsRNq1wC5xSNPzwGUkvnEuot3Yj1IcJzZIWo5fbiaQmVIw7GislHuCbATxXIw2bGNE5owLOWutLZSkd5Ky6ZHsOgs6ZHVa_RpwxDwN8b_HDMOz-oDxN9Vt1Ev1JCQvetJbhwtgiJlj5PtL0Os2jRTZ4nK5zyERZvWpHqyom_pSMK135RSFrP_fszZEDnlC7vG981CrqQSYWHAAAAAUR3xUQA")
+STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
